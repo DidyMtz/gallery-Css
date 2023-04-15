@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card{
+
+    display:flex;
+    width:200px;
+    height:200px;
+    background-color: blueviolet;
+    color:white;
+    text-align: center;
+    cursor:pointer;
+    position: fixed;
+    z-index: 0;
+    top:50%;
+    left:50%;
+    margin:auto;
+    transform:translate(-50%,-50%)
+   /* transition: background-color 0.5s ease-out;*/
+
+}
+.card > p{
+   margin:auto;
+}
+.card::after{
+    content:"hello";
+    position:absolute;
+    z-index: -1;   
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    background-color: red;
+    display: block;
+
+}
+.card::after:hover{
+    opacity: 1;
+}

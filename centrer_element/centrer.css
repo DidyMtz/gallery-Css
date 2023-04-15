@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  margin: 100px auto;
+  /*position: fixed;
+  left: 50%;
+  top: 50%;*/
+  font-size: 25px;
+}
+
+/* flex box*/
+.b1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* position relative et absolute */
+.b2 {
+  position: relative;
+}
+.b2 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*  position relative relative */
+.b3 {
+  position: relative;
+}
+.b3 p {
+  position: relative;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* grid */
+.b4 {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  /*
+    align-items: center;
+    justify-items:center
+    */
+}
+/* text-align line-height - pas une bonne pratique*/
+
+.b5 {
+  text-align: center;
+}
+.b5 p {
+  line-height: 150px;
+}
+/* flex ou grid margin auto*/
+
+.b6 {
+  display: flex;
+  /*display: grid;*/
+}
+.b6 p {
+  margin: auto;
+}
+
+/* absolute + transform */
+
+.b7 p {
+
+    position: absolute;
+    transform: translate(calc(75px - 50%), calc(75px - 50%))
+}
+/* position: fixed  par rapport au view port*/
+.b8 p{
+
+   margin:auto;
+   position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%)
+}
