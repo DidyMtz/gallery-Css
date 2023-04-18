@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#e66465, #9198e5);
+  gap: 2rem;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  background-color: blue;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgba(104, 88, 88, 0.349);
+  cursor: pointer;
+  letter-spacing: normal;
+  transition: 0.4s ease-out;
+}
+
+button:hover {
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 255, 0.808);
+  height:4rem;
+  box-shadow: 10px 5px 5px rgba(255, 0, 55, 0.568);
+}
+
+.btn1:hover{
+    /*box-shadow: 10px 5px 5px rgba(0, 255, 85, 0.568);*/
+    box-shadow: 10px 10px 0 #000, 20px 20px 0 #f00, 30px 30px 0 #0f0, 40px 40px 0 #00f;
+
+}
+.btn2:hover{
+    box-shadow: 10px 5px 5px rgba(238, 255, 0, 0.568);
+}
+.btn3:hover{
+    box-shadow: 10px 5px 5px rgba(255, 0, 55, 0.568);
+}
+
+
+.exemple{
+
+    background-image: url('image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
